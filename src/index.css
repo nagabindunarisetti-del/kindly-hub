@@ -1,0 +1,31 @@
+/* Kindly Hub — design tokens shared with Kindly Desk 2 (light by default, dark follows the system) */
+:root {
+  --ink: #1d2433; --ink-2: #4a5468; --ink-3: #7a8397;
+  --paper: #f5f6fa; --surface: #ffffff; --sunk: #eef0f6; --line: #e1e4ee; --line-2: #cfd4e2;
+  --primary: #3346d3; --primary-ink: #fff; --primary-soft: #e8ebfd; --primary-hover: #2836b8;
+  --hl: #ffd23f; --hl-ink: #3a2e00;
+  --ok: #15803d; --ok-soft: #dcf5e4; --warn: #b45309; --warn-soft: #fff1d6; --bad: #c81e1e; --bad-soft: #fde4e4;
+  --p-urgent: #dc2626; --p-high: #ea580c; --p-medium: #3346d3; --p-low: #94a3b8;
+  --rail: #1d2433; --rail-ink: #c3c9d8; --trial: #e9f1ff;
+  --pop: 0 12px 32px -12px rgba(29,36,51,.28), 0 2px 6px rgba(29,36,51,.08);
+  --c1: #3346d3; --c2: #15a37f; --c3: #f59e0b; --c4: #e11d74;
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font: "Atkinson Hyperlegible", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e8ebf3; --ink-2: #b4bccd; --ink-3: #8790a5;
+    --paper: #12151d; --surface: #1a1e29; --sunk: #232836; --line: #2d3343; --line-2: #3a4155;
+    --primary: #7d8cff; --primary-ink: #0d1020; --primary-soft: #262c4d; --primary-hover: #95a1ff;
+    --ok: #4ade80; --ok-soft: #16301f; --warn: #f59e0b; --warn-soft: #33270f; --bad: #f87171; --bad-soft: #3a1a1a;
+    --p-medium: #8e9bff; --rail: #0c0e14; --trial: #1c2b41;
+    --pop: 0 12px 32px -12px rgba(0,0,0,.7), 0 2px 6px rgba(0,0,0,.4);
+    --c1: #8e9bff; --c2: #34d399; --c3: #fbbf24; --c4: #f472b6;
+    color-scheme: dark;
+  }
+}
+body { -webkit-font-smoothing: antialiased; }
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
